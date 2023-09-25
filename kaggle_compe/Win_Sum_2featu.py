@@ -11,7 +11,7 @@ import itertools
 
 model = CategoricalNB()
 encoder = LabelEncoder()
-df = pd.read_csv("kaggle_compe\olym_treated_NoNaN_train.csv")
+df = pd.read_csv("kaggle_compe\olym_treated_NoNaN_train.csv") #most normalized/treated data
 
 all_columns= ['Year']
 categorical_columns = ['Sex']

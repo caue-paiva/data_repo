@@ -1,6 +1,7 @@
 import matplotlib as plt
 import pandas as pd
 import time
+import seaborn as sns
 
 def Set_Sex_binary(df):  #0 is for males and 1 for females 
    Bina_sex = lambda x : int(x == 'F')  
@@ -59,7 +60,7 @@ df2 = df.dropna()
 
 print(df2.isna().sum())
 
-df2.to_csv('kaggle_compe\olym_treated_NoNaN_train.csv', index=False)
+df2.to_csv('kaggle_compe\olym_treated_NoNaN_train.csv', index=False) #most normalized/treated data
 #print(df2.head())
 
 
